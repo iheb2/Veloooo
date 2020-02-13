@@ -1,0 +1,93 @@
+velo_homepage:
+    path:     /
+    defaults: { _controller: VeloBundle:Default:index }
+
+read_velo:
+    path:     /read
+    defaults: { _controller: VeloBundle:Velo:read }
+
+create_velo:
+    path:     /create
+    defaults: { _controller: VeloBundle:Velo:create }
+
+update_velo:
+    path:     /update/{id}
+    defaults: { _controller: VeloBundle:Velo:update }
+
+delete_velo:
+    path:     /delete/{id}
+    defaults: { _controller: VeloBundle:Velo:delete }
+
+plus_de_details:
+  path:     /details/{id}
+  defaults: { _controller: VeloBundle:Velo:index }
+
+panier_add:
+  path:     /panier/add/{id}
+  defaults: { _controller: VeloBundle:Carte:add }
+
+panier_remove:
+  path:     /panier/remove/{id}
+  defaults: { _controller: VeloBundle:Carte:remove }
+
+panier_select:
+  path:     /panier
+  defaults: { _controller: VeloBundle:Carte:index }
+
+readcmd_commande:
+  path:     /readcmd
+  defaults: { _controller: VeloBundle:Commande:readcmd }
+
+createcmd_commande:
+  path:     /createcmd
+  defaults: { _controller: VeloBundle:Commande:createcmd }
+
+deletecmd_commande:
+  path:     /deletecmd/{id}
+  defaults: { _controller: VeloBundle:Commande:deletecmd }
+
+updatecmd_commande:
+  path:     /updatecmd/{id}
+  defaults: { _controller: VeloBundle:Commande:updatecmd }
+
+passer_cmd:
+  path:     /passercmd
+  defaults: { _controller: VeloBundle:Commande:indexx }
+
+consulter_cmd:
+  path:     /consultercmd/{id}
+  defaults: { _controller: VeloBundle:Commande:indexxx }
+
+veloback_homepage:
+  path:     /back
+  defaults: { _controller: VeloBundle:Default:indexbackk }
+Evenement_affliste:
+  path:     /back
+  defaults: { _controller: VeloBundle:Default:indexbackk }
+
+createback_velo:
+  path:     /createback
+  defaults: { _controller: VeloBundle:Velo:createback }
+
+readback_velo:
+  path:     /readback
+  defaults: { _controller: VeloBundle:Velo:readback }
+
+deleteback_velo:
+  path:     /deleteback/{id}
+  defaults: { _controller: VeloBundle:Velo:deleteback }
+
+updateback_velo:
+  path:     /updateback/{id}
+  defaults: { _controller: VeloBundle:Velo:updateback }
+
+readcmdback_commande:
+  path:     /readcmdback
+  defaults: { _controller: VeloBundle:Commande:readcmdback }
+
+deletecmdback_commande:
+  path:     /deletecmdback/{id}
+  defaults: { _controller: VeloBundle:Commande:deletecmdback }
+updatecmdback_commande:
+    path:     /updatecmdback/{id}
+    defaults: { _controller: VeloBundle:Commande:updatecmdback }

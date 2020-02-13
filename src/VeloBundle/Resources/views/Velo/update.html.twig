@@ -1,0 +1,26 @@
+
+<html >
+<head>
+    <title>Modifier un Club</title>
+
+</head>
+<body>
+<center><h1>Welcome to the Club:update page</h1>
+    <fieldset style="width: 50%">
+        <form method="POST">
+            Nom: <input type="text" name="nom" value="{{ velo.nom }}">
+            <br/>
+            prix achat: <input type="text" name="prixachat" value="{{ velo.prixachat }}"><br/>
+            prix vente: <input type="text" name="prixvente" value="{{ velo.prixvente }}"><br/>
+            quantite: <input type="text" name="quantite" value="{{ velo.quantite }}"><br>
+            descriptionn: <input type="text" name="description" value="{{ velo.description }}">
+
+            <br/>
+
+            <input type="submit" value="Enregistrer">
+        </form>
+    </fieldset>
+</center>
+</body>
+
+</html>
