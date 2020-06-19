@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="235.0" prefWidth="256.0" styleClass="sidebar" stylesheets="@../style/EvenementCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PanneauDeControle">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#archive" prefHeight="76.0" prefWidth="256.0" styleClass="link-button" text="Archives" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#pdf" prefHeight="71.0" prefWidth="256.0" styleClass="link-button" text="Exporter pdf" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="109.0" mnemonicParsing="false" onAction="#excel" prefHeight="71.0" prefWidth="256.0" styleClass="link-button" text="Exporter Excel" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#stats" prefHeight="84.0" prefWidth="256.0" styleClass="link-button" text="Statistiques" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></JFXButton>
+   </children>
+</VBox>

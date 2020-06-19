@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GererMonCompteController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="998.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="112.0" prefHeight="58.0" prefWidth="187.0" text="Espace Client" textFill="#ff2727">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="140.0" layoutY="205.0" />
+      <TextField fx:id="email" layoutX="140.0" layoutY="381.0" />
+      <PasswordField fx:id="password" layoutX="140.0" layoutY="281.0" />
+      <Label layoutX="32.0" layoutY="201.0" prefHeight="34.0" prefWidth="136.0" text="username" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="208.0" fitWidth="241.0" layoutX="746.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retour" layoutX="824.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="47.0" prefWidth="166.0" style="-fx-background-color: #000000;" text="Retour" textFill="YELLOW">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="51.0" fitWidth="47.0" layoutX="932.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/8.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="277.0" prefHeight="34.0" prefWidth="136.0" text="Password" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="377.0" prefHeight="34.0" prefWidth="136.0" text="Email" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="163.0" fitWidth="272.0" layoutX="27.0" layoutY="399.0" onMouseClicked="#modif" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="446.0" onMouseClicked="#modif" prefHeight="58.0" prefWidth="160.0" text="Modifier" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

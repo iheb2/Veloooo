@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Veloo1Controller2">
+   <children>
+      <ImageView fitHeight="701.0" fitWidth="1689.0" layoutX="-592.0" layoutY="-62.0" onMouseClicked="#clearr">
+         <image>
+            <Image url="@../images/interface1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="221.0" fitWidth="408.0" layoutX="690.0" layoutY="412.0">
+         <image>
+            <Image url="@../images/interface2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tid" layoutX="172.0" layoutY="81.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="tdescription" layoutX="163.0" layoutY="244.0" />
+      <TextField fx:id="tnbcommand" layoutX="163.0" layoutY="408.0" />
+      <TextField fx:id="tprixachatnce" layoutX="163.0" layoutY="291.0" />
+      <TextField fx:id="tnbvue" layoutX="163.0" layoutY="371.0" />
+      <TextField fx:id="tstock_id" layoutX="172.0" layoutY="114.0" />
+      <TextField fx:id="tnom" layoutX="368.0" layoutY="248.0" />
+      <TextField fx:id="tprixvente" layoutX="163.0" layoutY="332.0" />
+      <ImageView fitHeight="86.0" fitWidth="73.0" layoutX="525.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="jjj" fitHeight="133.0" fitWidth="210.0" layoutX="824.0" layoutY="241.0">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="qqq" layoutX="898.0" layoutY="288.0" prefHeight="30.0" prefWidth="121.0" promptText="Rechercher" style="-fx-background-color: #60605b;" />
+      <TableView fx:id="table" layoutX="681.0" layoutY="59.0" onMouseClicked="#SelectItemes" prefHeight="160.0" prefWidth="397.0" style="-fx-background-color: #ffff00;">
+        <columns>
+            <TableColumn fx:id="imgg" minWidth="0.0" prefWidth="0.0" text="img" />
+          <TableColumn fx:id="col_id" prefWidth="135.0" text="ID">
+               <columns>
+                  <TableColumn fx:id="col_prixv" prefWidth="158.0" text="Prix vente">
+                     <columns>
+                        <TableColumn fx:id="vol_nbc" minWidth="0.0" prefWidth="0.0" text="Nb Cmd" />
+                     </columns>
+                  </TableColumn>
+               </columns></TableColumn>
+          <TableColumn fx:id="col_stock_id" minWidth="0.0" prefWidth="0.0" text="Stock ID" />
+            <TableColumn fx:id="col_marque" prefWidth="189.0" text="Marque" />
+            <TableColumn fx:id="col_prixa" minWidth="0.0" prefWidth="0.0" text="Prix Achat" />
+            <TableColumn fx:id="col_desc" prefWidth="126.0" text="Description" />
+            <TableColumn fx:id="col_nbv" prefWidth="81.0" text="Nb Vue" />
+        </columns>
+      </TableView>
+      <Label layoutX="63.0" layoutY="224.0" prefHeight="25.0" prefWidth="79.0" text="Stock ID" textFill="#ddd6d6">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="stockk" layoutX="72.0" layoutY="114.0" prefHeight="25.0" prefWidth="79.0" text="Stock ID" textFill="#dd1f1f">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="a" layoutX="63.0" layoutY="371.0" prefHeight="25.0" prefWidth="79.0" text="Nb de Vue" textFill="#dd1f1f">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="b" layoutX="63.0" layoutY="408.0" prefHeight="25.0" prefWidth="127.0" text="Nb de cmd" textFill="#dd1f1f">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="vvvvv" fitHeight="133.0" fitWidth="200.0" layoutX="598.0" layoutY="237.0">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="vvvv" layoutX="664.0" layoutY="284.0" mnemonicParsing="false" onAction="#consulter" prefHeight="30.0" prefWidth="137.0" style="-fx-background-color: #60605b;" text="Consulter" textFill="YELLOW">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="131.0" layoutY="588.0" mnemonicParsing="false" onAction="#Imprimer" text="Imprimer" textOverrun="CLIP" />
+      <Label fx:id="idd" layoutX="72.0" layoutY="81.0" prefHeight="25.0" prefWidth="79.0" text="ID" textFill="#dd1f1f">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="959.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #000000;" text="Retour" textFill="YELLOW">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="70.0" layoutX="1053.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/8.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="comboType" layoutX="163.0" layoutY="212.0" prefWidth="150.0" />
+      <ImageView fitHeight="40.0" fitWidth="57.0" layoutX="83.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/print.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="o" layoutX="650.0" layoutY="241.0" prefHeight="40.0" prefWidth="219.0" text="Label" textFill="YELLOW">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font></Label>
+      <Label fx:id="oo" layoutX="646.0" layoutY="296.0" prefHeight="40.0" prefWidth="210.0" text="Label" textFill="YELLOW">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font></Label>
+      <Label fx:id="ooo" layoutX="652.0" layoutY="295.0" prefHeight="179.0" prefWidth="228.0" text="Label" textFill="YELLOW">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font></Label>
+      <Label fx:id="oooo" layoutX="465.0" layoutY="584.0" prefHeight="40.0" prefWidth="193.0" text="Label" textFill="YELLOW">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font></Label>
+      <ImageView fx:id="l" fitHeight="30.0" fitWidth="65.0" layoutX="989.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/download.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="pc" fill="DODGERBLUE" layoutX="534.0" layoutY="138.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="125.0" fitWidth="193.0" layoutX="337.0" layoutY="479.0" fx:id="x">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="396.0" layoutY="522.0" mnemonicParsing="false" onAction="#commander" prefHeight="30.0" prefWidth="164.0" style="-fx-background-color: #60605b;" text="commander" textFill="YELLOW" fx:id="xx">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="o1" layoutX="337.0" layoutY="241.0" prefHeight="40.0" prefWidth="353.0" text="Marque           ==&gt;" textFill="#d01212">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="oo1" layoutX="337.0" layoutY="298.0" prefHeight="40.0" prefWidth="273.0" text="Description    ==&gt;" textFill="#d01212">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="ooo1" layoutX="337.0" layoutY="374.0" prefHeight="40.0" prefWidth="260.0" text="Prix                 ==&gt;   " textFill="#d01212">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="oooo1" layoutX="223.0" layoutY="581.0" prefHeight="40.0" prefWidth="228.0" text="Label      ==&gt;" textFill="#d01212">
+         <font>
+            <Font name="Imprint MT Shadow" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

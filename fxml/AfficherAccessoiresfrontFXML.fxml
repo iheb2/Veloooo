@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherAccessoiresfrontFXMLController">
+   <children>
+      <ImageView fitHeight="758.0" fitWidth="1220.0" layoutY="-57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../content/93998065_221920238905008_1848594511639347200_n.jpg" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="ListView_Produits" layoutX="298.0" layoutY="107.0" prefHeight="591.0" prefWidth="712.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="17.0" layoutY="24.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="272.0" layoutY="10.0" prefHeight="57.0" prefWidth="689.0">
+         <children>
+            <TextField fx:id="rechercher" onKeyReleased="#search" prefHeight="39.0" prefWidth="230.0" promptText="rechercher" />
+            <FontAwesomeIconView glyphName="SEARCH" size="15" />
+         </children>
+      </HBox>
+      <JFXListView fx:id="ListView_Produits1" layoutX="938.0" layoutY="84.0" onMouseEntered="#showpanier2" onMouseExited="#hidepanier2" prefHeight="400.0" prefWidth="166.0" />
+      <HBox alignment="BOTTOM_LEFT" layoutX="959.0" layoutY="7.0" prefHeight="57.0" prefWidth="224.0">
+         <children>
+            <ImageView fx:id="panier" fitHeight="47.0" fitWidth="59.0" onMouseEntered="#paniershow" onMouseExited="#panierhide" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../content/panier.jpg" />
+               </image></ImageView>
+            <Label fx:id="nbrnotif" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" styleClass="round-lbl" text="0" textFill="#0e5107">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="2.0" layoutY="143.0" prefHeight="151.0" prefWidth="289.0" style="-fx-alignment: ;">
+         <children>
+            <Pane prefHeight="77.0" prefWidth="203.0">
+               <children>
+                  <ImageView fitHeight="201.0" fitWidth="289.0" layoutX="6.0" layoutY="-37.0">
+                     <image>
+                        <Image url="@../../../content/48364018_428862404316493_783901762825224192_n.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="Accueil" layoutX="29.0" layoutY="21.0" onAction="#accueilaffiche" prefHeight="69.0" prefWidth="266.0" text="Accueil" textFill="#f5ebeb">
+                     <font>
+                        <Font name="Calibri Bold" size="34.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="118.0" fitWidth="133.0" layoutX="943.0" layoutY="576.0">
+         <image>
+            <Image url="@../../../content/93860343_579680085983292_499736414305386496_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="201.0" fitWidth="289.0" layoutX="14.0" layoutY="270.0">
+         <image>
+            <Image url="@../../../content/48364018_428862404316493_783901762825224192_n.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Panier" layoutX="60.0" layoutY="326.0" onAction="#afficherpanier" prefHeight="69.0" prefWidth="223.0" text="Panier" textFill="#f2e5e5">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

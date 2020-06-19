@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="719.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CartePageFXMLController">
+   <children>
+      <ImageView fitHeight="719.0" fitWidth="1067.0" layoutX="-2.0">
+         <image>
+            <Image url="@../../../content/93998065_221920238905008_1848594511639347200_n.jpg" />
+         </image>
+      </ImageView>
+      <JFXHamburger fx:id="hamburger" layoutX="17.0" layoutY="24.0" />
+      <HBox layoutX="278.0" layoutY="10.0" prefHeight="85.0" prefWidth="773.0" />
+      <Pane fx:id="pane" layoutX="279.0" layoutY="116.0" prefHeight="347.0" prefWidth="699.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <children>
+            <HBox prefHeight="63.0" prefWidth="174.0" spacing="10.0" style="-fx-background-color: #ab1616; -fx-background-radius: 10 0 0 0;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="525.0" prefHeight="60.0" prefWidth="174.0" spacing="10.0" style="-fx-background-color: #ab1616; -fx-background-radius: 0 10 0 0;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="305.0" prefHeight="60.0" prefWidth="105.0" spacing="10.0" style="-fx-background-color: #ab1616;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="412.0" prefHeight="60.0" prefWidth="111.0" spacing="10.0" style="-fx-background-color: #ab1616;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="177.0" prefHeight="60.0" prefWidth="125.0" spacing="10.0" style="-fx-background-color: #ab1616;">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane layoutX="581.0" layoutY="549.0" prefHeight="133.0" prefWidth="301.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;">
+         <children>
+            <HBox prefHeight="63.0" prefWidth="301.0" style="-fx-background-radius: 10 10 0 0; -fx-background-color: #ab1616;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="prix totale" wrappingWidth="113.322265625">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="90.0" top="15.0" />
+               </padding>
+            </HBox>
+            <Separator layoutX="115.0" layoutY="65.0" orientation="VERTICAL" prefHeight="54.0" prefWidth="6.0" />
+            <Text fx:id="prix_total" layoutX="24.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.662597655318677">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="valider" layoutX="121.0" layoutY="76.0" mnemonicParsing="false" onAction="#validationCommande" prefHeight="33.0" prefWidth="174.0" style="-fx-background-color: #000000; -fx-background-radius: 5;" text="valider la commande" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutY="94.0" prefHeight="85.0" prefWidth="239.0" style="-fx-background-color: #ab1616;">
+         <children>
+            <Pane prefHeight="77.0" prefWidth="203.0" style="-fx-background-color: #ab1616;">
+               <children>
+                  <Label layoutX="58.0" layoutY="10.0" prefHeight="57.0" prefWidth="161.0" text="Go Green" textFill="YELLOWGREEN">
+                     <font>
+                        <Font name="Forte" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="867.0" layoutY="516.0">
+         <image>
+            <Image url="@../../../content/93860343_579680085983292_499736414305386496_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="239.0" layoutX="8.0" layoutY="267.0">
+         <image>
+            <Image url="@../../../content/48364018_428862404316493_783901762825224192_n.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Accueil" layoutX="40.0" layoutY="304.0" onAction="#accueilaffiche" prefHeight="69.0" prefWidth="239.0" text="Accueil" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="159.0" fitWidth="239.0" layoutX="8.0" layoutY="359.0">
+         <image>
+            <Image url="@../../../content/48364018_428862404316493_783901762825224192_n.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Panier" layoutX="-1.0" layoutY="398.0" onAction="#afficherpanier" prefHeight="69.0" prefWidth="279.0" text="Panier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

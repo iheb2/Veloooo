@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterQuestionController">
+    <children>
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="206.0" fitWidth="400.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/VISU-RECLAMATION-BLOG.jpg" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="65.0" layoutY="311.0" prefHeight="23.0" prefWidth="263.0" text="Rédiger votre reclamation" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="69.0" layoutY="344.0" prefHeight="23.0" prefWidth="263.0" text="Nous sommes là pour vous rendre le sourire" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="481.0" layoutY="80.0" prefHeight="375.0" prefWidth="325.0" AnchorPane.bottomAnchor="48.0" AnchorPane.topAnchor="80.0">
+            <children>
+            <TextField fx:id="reclmation" layoutX="8.0" layoutY="60.0" prefHeight="119.0" prefWidth="275.0" />
+                <Button fx:id="buttonAjouter" layoutX="4.0" layoutY="224.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #0C39FF;" text="Valider" textFill="WHITE" />
+                <Button fx:id="btnSignup" layoutX="4.0" layoutY="296.0" mnemonicParsing="false" onAction="#Imprimer" prefHeight="34.0" prefWidth="275.0" stylesheets="@../styling/fullpackstyling.css" text="Imprimer" />
+                <Separator layoutX="8.0" layoutY="206.0" prefHeight="15.0" prefWidth="275.0" />
+                <Separator layoutY="270.0" prefHeight="7.0" prefWidth="275.0" />
+                <Label alignment="CENTER" layoutX="122.0" layoutY="262.0" prefHeight="23.0" prefWidth="31.0" style="-fx-background-color: #fff;" text="Ou" textFill="#5b5a5a">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+            <FontAwesomeIcon glyphName="PRINT" layoutX="90.0" layoutY="320.0" />
+            <Label fx:id="errorsType" layoutX="12.0" layoutY="14.0" prefHeight="21.0" prefWidth="275.0" textFill="RED" />
+            <Label fx:id="errorMessage" layoutX="8.0" layoutY="179.0" prefHeight="21.0" prefWidth="275.0" textFill="#ff0707" />
+            </children>
+        </Pane>
+      <JFXComboBox fx:id="type" layoutX="491.0" layoutY="56.0" prefHeight="31.0" prefWidth="275.0" promptText="choisir votre type" />
+    </children>
+</AnchorPane>

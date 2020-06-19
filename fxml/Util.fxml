@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Util">
+    <children>
+        <Pane prefHeight="575.0" prefWidth="429.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+              <Label fx:id="lblStatus" prefHeight="32.0" prefWidth="354.0" text="Status :" />
+                <TextField fx:id="txtEmail" layoutX="75.0" layoutY="276.0" prefHeight="32.0" prefWidth="278.0" promptText="email" />
+                <DatePicker fx:id="txtDOB" layoutX="75.0" layoutY="390.0" prefHeight="32.0" prefWidth="278.0" promptText="date of birth" />
+                <Button fx:id="btnSave" layoutX="76.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" prefHeight="32.0" prefWidth="278.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Save" />
+                <ComboBox fx:id="txtGender" editable="true" layoutX="76.0" layoutY="334.0" prefHeight="32.0" prefWidth="278.0" promptText="gender">
+                </ComboBox>
+            <ImageView fitHeight="564.0" fitWidth="1278.0" layoutX="-168.0">
+               <image>
+                  <Image url="@../images/interface1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="294.0" fitWidth="429.0" layoutX="820.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/interface2.png" />
+               </image>
+            </ImageView>
+              <TableView fx:id="tblData" layoutX="498.0" layoutY="52.0" prefHeight="211.0" prefWidth="594.0" />
+            <Button fx:id="retour" layoutX="976.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #000000;" text="Retour" textFill="YELLOW">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="70.0" layoutX="1069.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/8.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

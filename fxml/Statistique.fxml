@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="table" prefHeight="596.0" prefWidth="614.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StatistiqueController">
+    <stylesheets>
+        <URL value="@statistique.css" />
+    </stylesheets>
+   <children>
+   
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="52.0" prefHeight="504.0" prefWidth="617.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <Text fill="#07db46" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="statistiques">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Text>
+            <Pane fx:id="pane" prefHeight="496.0" prefWidth="617.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="retour" layoutX="32.0" layoutY="413.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="85.0" text="retour" />
+               </children></Pane>
+         </children>
+      </VBox>
+     
+   </children>
+</AnchorPane>

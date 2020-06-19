@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="419.0" fitWidth="348.0" layoutX="539.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/interface2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="291.0" layoutX="8.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="272.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iii" fitHeight="163.0" fitWidth="272.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iiii" fitHeight="163.0" fitWidth="270.0" layoutX="-1.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ii" layoutX="80.0" layoutY="300.0" onMouseClicked="#util" prefHeight="34.0" prefWidth="152.0" text="Les utilisateurs" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="i" layoutX="89.0" layoutY="387.0" onMouseClicked="#stock" prefHeight="34.0" prefWidth="152.0" text="Stock" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="540.0" onMouseClicked="#acc" prefHeight="28.0" prefWidth="136.0" text="Les accessoires" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="217.0" onMouseClicked="#velo" prefHeight="34.0" prefWidth="136.0" text="Les Velos" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="634.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#retour" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: #000000;" text="Se déconnecter" textFill="YELLOW">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="51.0" fitWidth="47.0" layoutX="795.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="153.0" fitWidth="169.0" layoutX="8.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/admin-settings-male.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="admin" layoutX="155.0" layoutY="73.0" prefHeight="38.0" prefWidth="523.0" text="Admin" textFill="YELLOW">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="361.0" layoutY="21.0">
+         <children>
+            <AnchorPane id="AnchorPane" />
+         </children>
+      </VBox>
+      <Label fx:id="kkk" layoutX="170.0" layoutY="35.0" prefHeight="38.0" prefWidth="230.0" text="Hello" textFill="YELLOW">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="gerer" layoutX="400.0" layoutY="8.0" mnemonicParsing="false" onAction="#gerer" onMouseClicked="#retour" prefHeight="47.0" prefWidth="208.0" style="-fx-background-color: #000000;" text="Gerer mon compte" textFill="YELLOW">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="47.0" fitWidth="130.0" layoutX="582.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1828404.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="291.0" layoutX="519.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="598.0" layoutY="220.0" onMouseClicked="#evt" prefHeight="28.0" prefWidth="136.0" text="Les accessoires" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="reclamation" fitHeight="145.0" fitWidth="222.0" layoutX="521.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6e5ae5a153d13b789b170c0edf9fc1d8%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="596.0" layoutY="308.0" onMouseClicked="#reclamationBack" prefHeight="28.0" prefWidth="136.0" text="Reclamations" textFill="#ffff00f2">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

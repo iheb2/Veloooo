@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="440.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUp">
+    <children>
+        <TableView fx:id="tblData" fixedCellSize="2.0" layoutX="1.0" layoutY="1.0" prefHeight="44.0" prefWidth="29.0" tableMenuButtonVisible="true">
+         <columnResizePolicy>
+           
+         </columnResizePolicy>
+        </TableView>
+        <Pane prefHeight="575.0" prefWidth="429.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <ImageView fitHeight="578.0" fitWidth="661.0" layoutX="-222.0" layoutY="-4.0">
+               <image>
+                  <Image url="@../images/interface1.jpg" />
+               </image>
+            </ImageView>
+                <TextField fx:id="txtFirstname" layoutX="136.0" layoutY="92.0" prefHeight="32.0" prefWidth="278.0" promptText="Nom " />
+                <TextField fx:id="txtLastname" layoutX="136.0" layoutY="150.0" prefHeight="32.0" prefWidth="278.0" promptText="Mot de passe" />
+                <TextField fx:id="txtEmail" layoutX="136.0" layoutY="209.0" prefHeight="32.0" prefWidth="278.0" promptText="email " />
+                <DatePicker fx:id="txtDOB" layoutX="136.0" layoutY="323.0" prefHeight="32.0" prefWidth="278.0" promptText="Date de naissance " />
+                <Button fx:id="btnSave" layoutX="137.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" prefHeight="32.0" prefWidth="278.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Enregistrer" />
+                <ComboBox fx:id="txtGender" editable="true" layoutX="137.0" layoutY="267.0" prefHeight="32.0" prefWidth="278.0" promptText="Sexe">
+                </ComboBox>
+              <Label fx:id="lblStatus" layoutX="154.0" layoutY="-28.0" prefHeight="120.0" prefWidth="285.0" text="Entrez Vos Informations !" textFill="YELLOW">
+               <font>
+                  <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="247.0" layoutX="206.0" layoutY="414.0">
+               <image>
+                  <Image url="@../images/interface2.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

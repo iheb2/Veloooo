@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" prefHeight="657.0" prefWidth="1289.0" styleClass="scroll-pane" stylesheets="@../style/listposts.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListController">
+    <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="260.0" styleClass="content-page" stylesheets="@../style/ajouterposts.css">
+         <children>
+            <VBox prefHeight="580.0" prefWidth="200.0" styleClass="content-gproduit">
+               <children>
+                  <TableView fx:id="listCategories" prefHeight="347.0" prefWidth="170.0">
+                     <columns>
+                        <TableColumn fx:id="type" prefWidth="120.0" text="Types" />
+                        
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="343.0" prefWidth="200.0">
+               <children>
+                  <JFXDrawer fx:id="drawer" prefHeight="176.0" prefWidth="256.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   
+   
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="998.0" styleClass="content-page" stylesheets="@../style/ajouterposts.css">
+         <children>
+            <HBox fx:id="compteur" prefHeight="68.0" prefWidth="938.0" styleClass="info-dashboard">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="302.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="158.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="165.0" text="Question">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countQuestion" prefHeight="51.0" prefWidth="158.0" text="0">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #4099ff;" styleClass="info-button">
+                           <graphic>
+                              <!--<FontAwesomeIcon glyphName="CUBE" styleClass="info-dashboard-icon" />-->
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="276.0" layoutY="10.0" prefHeight="100.0" prefWidth="292.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="113.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="114.0" text="Réponses">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countReponse" prefHeight="51.0" prefWidth="158.0" text="0">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #2ed8b6;" styleClass="info-button">
+                           <graphic>
+                              <!--<FontAwesomeIcon glyphName="TREE" styleClass="info-dashboard-icon" />-->
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="201.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="158.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="165.0" text="Archives">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countArchive" prefHeight="51.0" prefWidth="158.0" text="0">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #ffb64d;" styleClass="info-button">
+                           <graphic>
+                              <!--<FontAwesomeIcon glyphName="SLACK" styleClass="info-dashboard-icon" />-->
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="600.0" prefWidth="885.0" styleClass="content-gproduit">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="985.0">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="985.0" styleClass="hbox-search">
+                     <children>
+                        <JFXComboBox fx:id="triDate" onAction="#TriEvent" prefHeight="28.0" prefWidth="245.0" promptText="Tri par">
+                           <HBox.margin>
+                              <Insets right="600.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="rechercheBar" focusColor="#d1d1d1" onKeyPressed="#rechercher" onKeyReleased="#rechercher" prefHeight="41.0" prefWidth="283.0" promptText="Recherche Ici....." unFocusColor="#d1d1d1">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="listPostss" stylesheets="@../style/listposts.css">
+                     <columns>
+                        
+                        
+                        <TableColumn fx:id="date" prefWidth="128.0" text="date" />
+                        <TableColumn fx:id="nom" prefWidth="128.0" text="Nom" />
+                        <TableColumn fx:id="Type" prefWidth="128.0" text="Type" />
+                        <TableColumn fx:id="email" prefWidth="109.0" text="email" />
+                        <TableColumn fx:id="phone" prefWidth="106.0" text="phone" />
+                        <TableColumn fx:id="message" prefWidth="163.0" text="message" />
+                        <TableColumn fx:id="archiver" prefWidth="144.0" text="archiver" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <JFXHamburger fx:id="hamburger" prefHeight="20.0" prefWidth="536.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="1220.0" top="10.0" />
+         </BorderPane.margin>
+      </JFXHamburger>
+   </top>
+   
+   
+</BorderPane>
