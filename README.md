@@ -24,17 +24,6 @@ Web ,Desktop and Mobile Integrated Appliciation(2019-2020)
 -A 7-month academic group project to develop Desktop application in java, a web application using the framework symfony and a mobile application in codename one, all communicating with the same database.
 
 
-## 📝 Architecture overview
-- The client: this is the browser; it allows a user to access the server. In other words, it acts as an interface for the user.
-- The server: This is the main server that hosts the various software components of our application. These components are among others :
-
-The Web application: the actual application that is deployed on the Web server.
-
-The Web server: manages connections and client requests. It It also ensures the distribution of JSF and HTML pages.
-
-- The database: this is the component that handles the storage and management of data. management of data. Hibernate manages the persistence of data. Translated with www.DeepL.com/Translator (free version)
-
-![alt text](https://github.com/iheb2/PIdev4/blob/main/archi2.png?raw=true)
 
 ## 📝 My tasks for all 3 platforms
 
