@@ -28,6 +28,7 @@ Web ,Desktop and Mobile Integrated Appliciation(2019-2020)
 ## 📝 My tasks for all 3 platforms
 
 1- Report Elaboration .
+
 2- Authentication /Authorization, Customers , Baskets and Stocks management.
 
 
