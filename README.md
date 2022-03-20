@@ -21,14 +21,14 @@ Web ,Desktop and Mobile Integrated Appliciation(2019-2020)
 - URL   : https://drive.google.com/file/d/1lMWWM1mUPIHtQ7r9EqR4KNESdxO1ChF5/view
 
 ## 📝 Description
--A 7-month academic group project to develop Desktop application in java, a web application using the framework symfony and a mobile application in codename one, all communicating with the same database.
+-A 7-month academic group project to develop Desktop application in Java, a web application using the framework Symfony and a mobile application in Codename One, all communicating with the same database.
 
 
 
 ## 📝 My tasks for all 3 platforms
 
-- Elaborating the report 
-- Management of : Authentication /Authorization, Customers , Baskets and Stocks.
+1- Report Elaboration .
+2- Authentication /Authorization, Customers , Baskets and Stocks management.
 
 
 
